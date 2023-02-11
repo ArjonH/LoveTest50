@@ -1,9 +1,6 @@
 ### Project
 LoveTest50
 
-### Video Link
-https://youtu.be/9WW0N-jbgc4
-
 ### Background
 LoveTest50 uses the Love Calculator API from https://rapidapi.com/ajith/api/love-calculator. In order to use this API, you must set up an account at https://rapidapi.com/auth/sign-up. Once an account has been made, you will have access to your own API key in the textbox labeled X-RapidAPI-Key.
 
