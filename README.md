@@ -9,7 +9,7 @@ You should have a directory named project that contains a Python based website t
 where value is your API key that was previously set up.
 
 ### Running
-After the API key has been set up, you can start Flask’s built-in web server (within project/) with:    $ flask run
+After the API key has been set up, you can start Flask’s built-in web server (within LoveTest50/) with:    $ flask run
 Visit the URL outputted by flask to see the distribution code in action. 
 
 ### Register/Login
