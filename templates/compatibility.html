@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Compatibility
+{% endblock %}
+
+{% block main %}
+    <p>Test your luck with that special someone and see your compatibility!</p>
+    <form action="/compatibility" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="firstname" name="firstname" placeholder="name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="secondname" name="secondname" placeholder="name" type="text">
+        </div>
+        <button class="btn btn-danger" type="submit" id="imgbtn">Calculate</button>
+    </form>
+{% endblock %}

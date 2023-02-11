@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Love Triangle
+{% endblock %}
+
+{% block main %}
+    <p>Stuck in a love triangle? Enter three names below and see who the best couple is.</p>
+    <form action="/lovetriangle" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="firstname" name="firstname" placeholder="name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="secondname" name="secondname" placeholder="name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="thirdname" name="thirdname" placeholder="name" type="text">
+        </div>
+        <button class="btn btn-danger" type="submit">Solve</button>
+    </form>
+{% endblock %}

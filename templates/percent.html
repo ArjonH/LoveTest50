@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Percent
+{% endblock %}
+
+{% block main %}
+<!--images used is "Smiley Face 5 Satisfaction Scale" by cathyinoz-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var percent = document.getElementById("hiddenforjs").innerHTML;
+            imgLink = "";
+
+            if (percent > 79) {
+                imgLink="/static/great.jpg";
+            }
+
+            else if (percent > 59 && percent < 80) {
+                imgLink="/static/good.jpg";
+            }
+
+            else if (percent > 39 && percent < 60) {
+                imgLink="/static/neutral.jpg";
+            }
+
+            else if (percent > 19 && percent < 40) {
+                imgLink="/static/bad.jpg";
+            }
+
+            else {
+                imgLink="/static/worse.jpg";
+            }
+
+            document.getElementById("pctimg").src=imgLink;
+    });
+    </script>
+
+    <p> {{firstname}} and {{secondname}} are a {{splitpct}}% match. {{splitquote}}</p>
+    <p class="d-none" id="hiddenforjs">{{splitpct}}</p>
+    <img id="pctimg" src="">
+    
+{% endblock %}

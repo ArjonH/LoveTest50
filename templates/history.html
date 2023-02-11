@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Compatibility History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name 1</th>
+                <th>Name 2</th>
+                <th>Compatibility</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for search in searches %}
+                <tr>
+                    <td>{{ search.firstname }}</td>
+                    <td>{{ search.secondname }}</td>
+                    <td>{{ search.percent }}%</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

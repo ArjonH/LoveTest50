@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Love Triangle History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name 1</th>
+                <th>Name 2</th>
+                <th>Name 3</th>
+                <th>Best Couple</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for search in searches %}
+                <tr>
+                    <td>{{ search.firstname }}</td>
+                    <td>{{ search.secondname }}</td>
+                    <td>{{ search.thirdname }}</td>
+                    <td>{{ search.couple }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
