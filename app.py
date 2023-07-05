@@ -64,11 +64,6 @@ def compatibility():
 
         # Gets the percentage given by the API
         else:
-            # Automatic 100% for specific pair
-            if (firstname == "Hever" and secondname == "Stef") or (firstname == "Stef" and secondname == "Hever"):
-                splitpct = "100"
-                db.execute("INSERT INTO searches (user_id, firstname, secondname, percent) VALUES (?, ?, ?, ?)", session["user_id"], firstname, secondname, splitpct)
-                return render_template("percent.html", splitpct=splitpct, firstname=firstname, secondname=secondname)
             
             # Cleans the result to only return percentage as an integer in splitpct and quote in splitquote
             answer = love_calculator(firstname, secondname)
