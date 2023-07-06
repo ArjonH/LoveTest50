@@ -5,11 +5,13 @@ LoveTest50
 LoveTest50 uses the Love Calculator API from https://rapidapi.com/ajith/api/love-calculator. In order to use this API, you must set up an account at https://rapidapi.com/auth/sign-up. Once an account has been made, you will have access to your own API key in the textbox labeled X-RapidAPI-Key.
 
 ### Getting Started
-You should have a directory named project that contains a Python based website that is run using Flask. Before the website can be run, the API key must exported using the following command in your terminal:   $ export API_KEY=value
+You should have a directory named project that contains a Python based website that is run using Flask. Before the website can be run, the API key must exported using the following command in your terminal:   
+$ export API_KEY=value
 where value is your API key that was previously set up.
 
 ### Running
-After the API key has been set up, you can start Flask’s built-in web server (within LoveTest50/) with:    $ flask run
+After the API key has been set up, you can start Flask’s built-in web server (within LoveTest50/) with:
+$ flask run
 Visit the URL outputted by flask to see the distribution code in action. 
 
 ### Register/Login
