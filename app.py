@@ -186,7 +186,7 @@ def lovetriangle():
 
             else:
                 couple = "none"
-                db.execute("INSERT INTO triangle (user_id, firstname, secondname, thirdname, couple) VALUES (?, ?, ?, ?, ?)", session["user_id"], firstname, secondname, thirdname. couple) 
+                db.execute("INSERT INTO triangle (user_id, firstname, secondname, thirdname, couple) VALUES (?, ?, ?, ?, ?)", session["user_id"], firstname, secondname, thirdname, couple) 
                 return render_template("unsolvable.html")
 
 
